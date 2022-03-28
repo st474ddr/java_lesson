@@ -1,0 +1,5 @@
+<!ELEMENT students (student*)>
+<!ELEMENT student (age, name)>   <!-- 要照順序 -->
+<!ELEMENT age (#PCDATA)>
+<!ELEMENT name (#PCDATA)>
+<!ATTLIST student number ID #REQUIRED>

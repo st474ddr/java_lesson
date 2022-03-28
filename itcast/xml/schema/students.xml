@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+
+<students xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://www.w3.org/2001/XMLSchema"
+xsi:schemaLocation="http://www.w3.org/2001/XMLSchema  students.xsd">
+    <student number="s1">
+        <name>John</name>
+        <age>20</age>
+    </student>
+    <student number="s2">
+        <name>Mary</name>
+        <age>30</age>
+    </student>
+</students>

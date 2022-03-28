@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:element name="students" type="stduentsType"/>
+    <xsd:complexType name="stduentsType">
+        <xsd:sequence>
+            <xsd:element name="student" type="studentType" minOccurs="0" maxOccurs="unbounded"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="studentType">
+        <xsd:sequence>
+            <xsd:element name="age" type="ageType" minOccurs="0"/>
+            <xsd:element name="name" type="xsd:string" minOccurs="0"/>
+        </xsd:sequence>
+        <xsd:attribute name="number" type="nubmerType" use="required" />
+    </xsd:complexType>
+    <xsd:simpleType name="ageType">
+        <xsd:restriction base="xsd:integer">
+            <xsd:minInclusive value="0"/>
+            <xsd:maxInclusive value="150"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:simpleType name="nubmerType">
+        <xsd:restriction base="xsd:string">
+            <xsd:pattern value="s\d{4}"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+</xsd:schema>
