@@ -1,1 +1,5 @@
-/tomcat/
+/*/.settings
+/*/*.classpath
+/*/*.project
+/*/build
+/*/src/main/webapp/META-INF
