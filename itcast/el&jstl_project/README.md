@@ -102,7 +102,7 @@
         * end:結束值
         * var:臨時變數 (`i`)
         * step: 改變幅度
-        * items: 遍歷list使用
+        * items: 遍歷使用
         * varStatus: 狀態object
           * index: 當前元素的索引, 從0開始
           * count: 當前元素的循環次數, 從1開始
